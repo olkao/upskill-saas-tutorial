@@ -16,22 +16,27 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
-/*typography styles*/
+
+
 h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
 }
-/*background gradient*/
+
 .navbar, .home-callout {
 	background: #22c1c3;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
 }
 
-/*nav styles*/
 .navbar {
 	border: none;
+}
+.navbar-brand{
+	font-family: Open Sans, sans-serif;
+	font-weight: 800;
 }
 
 .navbar-default .navbar-brand, 
@@ -43,7 +48,17 @@ h1, h2, h3 {
 		opacity: 0.75;
 	}
 }
-/*homepage styles*/
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #22c1c3;
+  }
+}
+
 .home-callout{
 	color: white;
     margin-top: -20px;
