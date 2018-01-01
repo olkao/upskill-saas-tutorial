@@ -59,13 +59,18 @@ h1, h2, h3 {
   }
 }
 
-.home-callout{
+// Home Page Styles
+.home-callout {
 	color: white;
     margin-top: -20px;
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
+// prevent flash messages to appear when Sign out/log in
+.alert-notice {
+	display: none;
+}
 
 
 
