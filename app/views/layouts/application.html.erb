@@ -22,7 +22,6 @@
           <i class="fa fa-group"></i>
           DevMatch
         <% end %>    
-
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <div class="nav navbar-nav navbar-right">
@@ -30,7 +29,6 @@
             <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-warning navbar-btn" %> 
           <% else %>
              <%= link_to "Log In", new_user_session_path, class: "btn btn-success navbar-btn" %> 
-             <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary navbar-btn" %> 
           <% end %>
 
         </div>
